@@ -47,6 +47,11 @@ class Truck extends Vehicle
 		$this->truckLoading = $truckLoading;
 	}
 
+	public function setEnergy(int $energy): void
+	{
+		$this->energy = $energy;
+	}
+
 	public function getEnergy(): string
 	{
 		return $this->energy;
