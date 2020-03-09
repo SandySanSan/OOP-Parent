@@ -11,7 +11,7 @@ class Truck extends Vehicle
 	/**
 	 * @var int
 	 */
-	private $truckLoading = 0;
+	private $truckLoad = 0;
 
 	/**
 	 * @var int
@@ -37,14 +37,14 @@ class Truck extends Vehicle
 		$this->storage = $storage;
 	}
 
-	public function getLoading(): int
+	public function getLoad(): int
 	{
-		return $this->truckLoading;
+		return $this->truckLoad;
 	}
 
-	public function setLoading(int $truckLoading): void
+	public function setLoad(int $truckLoad): void
 	{
-		$this->truckLoading = $truckLoading;
+		$this->truckLoad = $truckLoad;
 	}
 
 	public function setEnergy(int $energy): void
@@ -57,9 +57,9 @@ class Truck extends Vehicle
 		return $this->energy;
 	}
 
-	public function isFilled(): string
+	public function getLoadStatus(): string
 	{
-		if ($this->truckLoading >= $this->storage)
+		if ($this->truckLoad >= $this->storage)
 			return "<br>Full";
 		else
 			return "<br>In filling";

@@ -21,5 +21,5 @@ echo $bike->brake();
 $homerTruck = new Truck('blue', 6, 'fuel', 1500);
 echo $homerTruck->forward();
 echo $homerTruck->brake();
-echo $homerTruck->setLoading(3000);
-echo $homerTruck->isFilled();
+echo $homerTruck->setLoad(3000);
+echo $homerTruck->getLoadStatus();
